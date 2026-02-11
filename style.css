@@ -1,0 +1,493 @@
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* =====================================================
+   RESET
+===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #050b1e;
+    color: #dbe6ff;
+    transition: background 0.4s, color 0.4s;
+    padding-top: 70px;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #050f2d;
+    color: #e6f0ff;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(58,169,255,0.25);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* NAV BUTTONS */
+.nav-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-btn {
+    padding: 6px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #e6f0ff;
+    border: 1px solid #3aa9ff;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #3aa9ff;
+    color: #050b1e;
+    box-shadow: 0 0 18px rgba(58,169,255,0.6);
+}
+
+/* THEME TOGGLE */
+.theme-toggle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #3aa9ff;
+    background: transparent;
+    color: #3aa9ff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    background: #3aa9ff;
+    color: #050b1e;
+    box-shadow: 0 0 14px rgba(58,169,255,0.6);
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+.hero {
+    height: calc(100vh - 70px);
+    background: radial-gradient(circle at top, #0a1a4f, #050b1e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    opacity: 0.85;
+}
+
+/* =====================================================
+   GLASS SECTIONS
+===================================================== */
+.glass-section {
+    width: 80%;
+    margin: 80px auto;
+    background: rgba(10,25,80,0.6);
+    padding: 40px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(58,169,255,0.4);
+    box-shadow: 0 0 35px rgba(58,169,255,0.25);
+}
+
+.glass-section h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* =====================================================
+   CARDS
+===================================================== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(10,25,80,0.7);
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 24px rgba(58,169,255,0.6);
+}
+
+/* =====================================================
+   INPUTS & BUTTONS
+===================================================== */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 14px;
+    border-radius: 8px;
+    border: 1px solid #3aa9ff;
+    background: #050f2d;
+    color: #e6f0ff;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #3aa9ff;
+    background: transparent;
+    color: #3aa9ff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3aa9ff;
+    color: #050b1e;
+    box-shadow: 0 0 20px rgba(58,169,255,0.6);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+/* =====================================================
+   LIGHT MODE (WHITE + ELECTRIC BLUE)
+===================================================== */
+.light-mode {
+    background: #ffffff;
+    color: #0a1a3a;
+}
+
+.light-mode .navbar {
+    background: #ffffff;
+    color: #0a1a3a;
+    box-shadow: 0 4px 18px rgba(58,169,255,0.35);
+}
+
+.light-mode .nav-btn {
+    color: #0a1a3a;
+    border-color: #3aa9ff;
+}
+
+.light-mode .nav-btn:hover {
+    background: #3aa9ff;
+    color: #ffffff;
+}
+
+.light-mode .hero {
+    background: linear-gradient(135deg, #ffffff, #e8f4ff);
+    color: #0a1a3a;
+}
+
+.light-mode .glass-section {
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #3aa9ff;
+    box-shadow: 0 0 30px rgba(58,169,255,0.3);
+}
+
+.light-mode .card {
+    background: #ffffff;
+}
+
+.light-mode input,
+.light-mode textarea {
+    background: #ffffff;
+    color: #0a1a3a;
+}
+
+.light-mode button {
+    background: #ffffff;
+    color: #0a1a3a;
+}
+
+.light-mode button:hover {
+    background: #3aa9ff;
+    color: #ffffff;
+}
+
+/* =====================================================
+   PRIMARY BUTTON (HERO + CTA)
+===================================================== */
+.primary-btn {
+    margin-top: 20px;
+    padding: 14px 36px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, #3aa9ff, #6ecbff);
+    color: #050b1e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(58,169,255,0.8);
+}
+
+/* =====================================================
+   STATS SECTION
+===================================================== */
+.stats {
+    width: 80%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-box {
+    background: rgba(10,25,80,0.6);
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(58,169,255,0.4);
+    box-shadow: 0 0 25px rgba(58,169,255,0.25);
+}
+
+.stat-box h2 {
+    font-size: 42px;
+    color: #3aa9ff;
+    margin-bottom: 8px;
+}
+
+.stat-box p {
+    opacity: 0.85;
+}
+
+/* =====================================================
+   ROADMAP
+===================================================== */
+.roadmap {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+}
+
+.roadmap li {
+    padding: 14px 20px;
+    background: rgba(10,25,80,0.7);
+    border-radius: 12px;
+    border-left: 4px solid #3aa9ff;
+    transition: 0.3s;
+}
+
+.roadmap li:hover {
+    transform: translateX(6px);
+    box-shadow: 0 0 18px rgba(58,169,255,0.5);
+}
+
+/* =====================================================
+   TESTIMONIALS
+===================================================== */
+.testimonials {
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.testimonials h3 {
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background: rgba(10,25,80,0.65);
+    padding: 26px;
+    margin: 14px auto;
+    max-width: 600px;
+    border-radius: 16px;
+    border: 1px solid rgba(58,169,255,0.35);
+    box-shadow: 0 0 25px rgba(58,169,255,0.25);
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* =====================================================
+   FAQ ACCORDION
+===================================================== */
+.faq {
+    margin-bottom: 14px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 14px 18px;
+    font-size: 14px;
+    background: rgba(10,25,80,0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(58,169,255,0.4);
+    cursor: pointer;
+    color: #e6f0ff;
+}
+
+.faq-question::after {
+    content: "+";
+    float: right;
+    font-size: 18px;
+}
+
+.faq-question.active::after {
+    content: "-";
+}
+
+.faq-answer {
+    display: none;
+    padding: 14px 18px;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+/* =====================================================
+   CTA SECTION
+===================================================== */
+.cta {
+    margin: 120px auto;
+    width: 80%;
+    padding: 60px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(58,169,255,0.15), rgba(10,25,80,0.7));
+    border-radius: 24px;
+    border: 1px solid rgba(58,169,255,0.4);
+    box-shadow: 0 0 40px rgba(58,169,255,0.35);
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    opacity: 0.85;
+}
+
+/* =====================================================
+   LIGHT MODE SUPPORT FOR NEW SECTIONS
+===================================================== */
+.light-mode .stat-box,
+.light-mode .testimonial-card,
+.light-mode .faq-question,
+.light-mode .roadmap li {
+    background: #ffffff;
+    color: #0a1a3a;
+}
+
+.light-mode .cta {
+    background: linear-gradient(135deg, #ffffff, #e8f4ff);
+}
+
+.faq {
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    display: block; /* make button full width */
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: #eee;
+    cursor: default; /* no pointer needed since not clickable */
+}
+
+.faq-answer {
+    display: block;       /* ensure div is visible */
+    padding: 0.5rem 1rem;
+    margin-top: 0.25rem;
+    background: #f9f9f9;
+    border-left: 3px solid #2196F3; /* optional styling */
+}
+
+/* =====================================================
+   COURSE CARDS AS BUTTONS
+===================================================== */
+.course-card {
+    display: block;
+    padding: 22px;
+    border-radius: 16px;
+    background: rgba(10,25,80,0.7); /* dark glass for dark theme */
+    color: #3aa9ff;                  /* electric blue text */
+    text-decoration: none;           /* remove underline */
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(58,169,255,0.25);
+    border: 1px solid rgba(58,169,255,0.4);
+}
+
+.course-card h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.course-card p {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* Glow hover effect */
+.course-card:hover {
+    background: #3aa9ff;
+    color: #050b1e;
+    box-shadow: 0 0 28px rgba(58,169,255,0.8);
+    transform: translateY(-5px);
+}
+
+/* LIGHT MODE SUPPORT */
+.light-mode .course-card {
+    background: rgba(255,255,255,0.85);
+    color: #0a1a3a;
+    border: 1px solid #3aa9ff;
+    box-shadow: 0 0 18px rgba(58,169,255,0.3);
+}
+
+.light-mode .course-card:hover {
+    background: #3aa9ff;
+    color: #ffffff;
+    box-shadow: 0 0 28px rgba(58,169,255,0.8);
+    transform: translateY(-5px);
+}
